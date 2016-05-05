@@ -1,0 +1,11 @@
+C:\Projects\WebFileManager\WebFileManager.Tests\bin\Debug\WebFileManager.Tests.dll.config
+C:\Projects\WebFileManager\WebFileManager.Tests\bin\Debug\WebFileManager.Tests.dll
+C:\Projects\WebFileManager\WebFileManager.Tests\bin\Debug\WebFileManager.Tests.pdb
+C:\Projects\WebFileManager\WebFileManager.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Projects\WebFileManager\WebFileManager.Tests\bin\Debug\WebFileManager.Core.dll
+C:\Projects\WebFileManager\WebFileManager.Tests\bin\Debug\WebFileManager.Core.pdb
+C:\Projects\WebFileManager\WebFileManager.Tests\bin\Debug\ru\WebFileManager.Core.resources.dll
+C:\Projects\WebFileManager\WebFileManager.Tests\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Projects\WebFileManager\WebFileManager.Tests\obj\Debug\WebFileManager.Tests.csprojResolveAssemblyReference.cache
+C:\Projects\WebFileManager\WebFileManager.Tests\obj\Debug\WebFileManager.Tests.dll
+C:\Projects\WebFileManager\WebFileManager.Tests\obj\Debug\WebFileManager.Tests.pdb

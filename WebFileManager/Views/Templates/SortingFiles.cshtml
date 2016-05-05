@@ -1,0 +1,42 @@
+﻿<div class="input-group">
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-default" ng-class="{ 'active': sortingFiles.filter == 'Name' }">
+            <input type="radio" ng-model="sortingFiles.filter" value="Name" />
+            <span>{{ 'SORT_NAME' | translate }}</span>
+        </label>
+        <label class="btn btn-default" ng-class="{ 'active': sortingFiles.filter == 'CreationTime' }">
+            <input type="radio" ng-model="sortingFiles.filter" value="CreationTime" />
+            <span>{{ 'SORT_DATE' | translate }}</span>
+        </label>
+        <label class="btn btn-default" ng-class="{ 'active': sortingFiles.filter == 'Type' }">
+            <input type="radio" ng-model="sortingFiles.filter" value="Type" />
+            <span>{{ 'SORT_TYPE' | translate }}</span>
+        </label>
+        <label class="btn btn-default" ng-class="{ 'active': sortingFiles.filter == 'Size' }">
+            <input type="radio"
+                   ng-model="sortingFiles.filter"
+                   value="Size" />
+            <span>{{ 'SORT_SIZE' | translate }}</span>
+        </label>
+    </div>
+    <div class="btn-group"
+         style="margin-top: 10px;"
+         data-toggle="buttons">
+        <label class="btn btn-default"
+               ng-class="{ 'active': sortingFiles.direction == 'Asc' }">
+            <input type="radio"
+                   ng-click="sortingFiles.changeDir(sortingFiles.direction)"
+                   ng-model="sortingFiles.direction"
+                   value='Asc' />
+            <span class="fa fa-sort-amount-asc"></span>
+        </label>
+        <label class="btn btn-default"
+               ng-class="{ 'active': sortingFiles.direction == 'Desc' }">
+            <input type="radio"
+                   ng-click="sortingFiles.changeDir(sortingFiles.direction)"
+                   ng-model="sortingFiles.direction"
+                   value='Desc' />
+            <span class="fa fa-sort-amount-desc"></span>
+        </label>
+    </div>
+</div>

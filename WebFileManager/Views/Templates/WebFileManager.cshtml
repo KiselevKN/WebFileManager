@@ -1,0 +1,358 @@
+﻿
+<script type="text/ng-template" id="bigSubFolderTemplate.html">
+    <div class="pull-left wfmSubfolder wfmSubfolderBig">
+        <!-- Header -->
+        <div class="clearfix">
+            <div class="checkbox checkbox-danger checkbox-inline pull-left">
+                <input type="checkbox"
+                       class="styled styled-primary"
+                       ng-click="deleteSelectedDisable()"
+                       ng-model="sub.Selected">
+                <label></label>
+            </div>
+            <div class="pull-right">
+                <p class="text-right">
+                    <span class="fa fa-pencil"
+                          title="{{ 'RENAME_FOLDER' | translate }}"
+                          uib-popover-template="renameFolder.templateUrl"
+                          popover-animation="true"
+                          popover-append-to-body="true"
+                          popover-placement="bottom"
+                          popover-trigger="outsideClick"></span>
+                    <span class="fa fa-times"
+                          title="{{ 'DELETE_FOLDER' | translate }}"
+                          uib-popover-template="deleteFolder.templateUrl"
+                          popover-animation="true"
+                          popover-append-to-body="true"
+                          popover-placement="bottom"
+                          popover-trigger="outsideClick"></span>
+                </p>
+            </div>
+        </div>
+        <!-- Body -->
+        <div title="{{sub.Name}}" ng-click="selectFolder(sub.Name)">
+            <img ng-src="{{sub.Icon}}" />
+        </div>
+        <!-- Footer -->
+        <div>
+            <p class="text-center">{{sub.Name}}</p>
+        </div>
+    </div>
+</script>
+
+<script type="text/ng-template" id="bigFileTemplate.html">
+    <div class="pull-left wfmSubfolder wfmSubfolderBig">
+        <!-- Header -->
+        <div class="clearfix">
+            <div class="checkbox checkbox-danger checkbox-inline pull-left">
+                <input type="checkbox"
+                       class="styled styled-primary"
+                       ng-click="deleteSelectedDisable()"
+                       ng-model="file.Selected">
+                <label></label>
+            </div>
+            <div class="pull-right">
+                <p class="text-right">
+                    <span class="fa fa-pencil"
+                          title="{{ 'RENAME_FILE' | translate }}"
+                          uib-popover-template="renameFile.templateUrl"
+                          popover-animation="true"
+                          popover-append-to-body="true"
+                          popover-placement="bottom"
+                          popover-trigger="outsideClick"></span>
+                    <span class="fa fa-times"
+                          title="{{ 'DELETE_FILE' | translate }}"
+                          uib-popover-template="deleteFile.templateUrl"
+                          popover-animation="true"
+                          popover-append-to-body="true"
+                          popover-placement="bottom"
+                          popover-trigger="outsideClick"></span>
+                </p>
+            </div>
+        </div>
+        <!-- Body -->
+        <div title="{{file.Name}}">
+            <img ng-src="{{file.Icon}}" />
+        </div>
+        <!-- Footer -->
+        <div>
+            <p class="text-center">{{file.Name}}</p>
+        </div>
+    </div>
+</script>
+
+<script type="text/ng-template" id="medSubFolderTemplate.html">
+    <div class="pull-left wfmSubfolder wfmSubfolderMed">
+        <!-- Header -->
+        <div class="clearfix">
+            <div class="checkbox checkbox-danger checkbox-inline pull-left">
+                <input type="checkbox"
+                       class="styled styled-primary"
+                       ng-click="deleteSelectedDisable()"
+                       ng-model="sub.Selected">
+                <label></label>
+            </div>
+            <div class="pull-right">
+                <p class="text-right">
+                    <span class="fa fa-pencil"
+                          title="{{ 'RENAME_FOLDER' | translate }}"
+                          uib-popover-template="renameFolder.templateUrl"
+                          popover-animation="true"
+                          popover-append-to-body="true"
+                          popover-placement="bottom"
+                          popover-trigger="outsideClick"></span>
+                    <span class="fa fa-times"
+                          title="{{ 'DELETE_FOLDER' | translate }}"
+                          uib-popover-template="deleteFolder.templateUrl"
+                          popover-animation="true"
+                          popover-append-to-body="true"
+                          popover-placement="bottom"
+                          popover-trigger="outsideClick"></span>
+                </p>
+            </div>
+        </div>
+        <!-- Body -->
+        <div title="{{sub.Name}}" ng-click="selectFolder(sub.Name)">
+            <img ng-src="{{sub.Icon}}" />
+        </div>
+        <!-- Footer -->
+        <div>
+            <p class="text-center">{{sub.Name}}</p>
+        </div>
+    </div>
+</script>
+
+<script type="text/ng-template" id="medFileTemplate.html">
+    <div class="pull-left wfmSubfolder wfmSubfolderMed">
+        <!-- Header -->
+        <div class="clearfix">
+            <div class="checkbox checkbox-danger checkbox-inline pull-left">
+                <input type="checkbox"
+                       class="styled styled-primary"
+                       ng-click="deleteSelectedDisable()"
+                       ng-model="file.Selected">
+                <label></label>
+            </div>
+            <div class="pull-right">
+                <p class="text-right">
+                    <span class="fa fa-pencil"
+                          title="{{ 'RENAME_FILE' | translate }}"
+                          uib-popover-template="renameFile.templateUrl"
+                          popover-animation="true"
+                          popover-append-to-body="true"
+                          popover-placement="bottom"
+                          popover-trigger="outsideClick"></span>
+                    <span class="fa fa-times"
+                          title="{{ 'DELETE_FILE' | translate }}"
+                          uib-popover-template="deleteFile.templateUrl"
+                          popover-animation="true"
+                          popover-append-to-body="true"
+                          popover-placement="bottom"
+                          popover-trigger="outsideClick"></span>
+                </p>
+            </div>
+        </div>
+        <!-- Body -->
+        <div title="{{file.Name}}">
+            <img ng-src="{{file.Icon}}" />
+        </div>
+        <!-- Footer -->
+        <div>
+            <p class="text-center">{{file.Name}}</p>
+        </div>
+    </div>
+</script>
+
+<script type="text/ng-template" id="smSubFolderTemplate.html">
+    <div class="wfmSubfolderSm clearfix">
+        <div class="pull-left">
+            <div class="checkbox checkbox-danger">
+                <input type="checkbox"
+                       class="styled styled-primary"
+                       ng-click="deleteSelectedDisable()"
+                       ng-model="sub.Selected">
+                <label></label>
+            </div>
+        </div>
+        <div title="{{sub.Name}}" class="pull-left"  ng-click="selectFolder(sub.Name)">
+            <img ng-src="{{sub.Icon}}" />
+        </div>
+        <div class="pull-left">
+            <p>
+                {{sub.Name}}
+            </p>
+        </div>
+        <div class="pull-right">
+            <div>
+                <p>
+                    <span class="fa fa-pencil"
+                          title="{{ 'RENAME_FOLDER' | translate }}"
+                          uib-popover-template="renameFolder.templateUrl"
+                          popover-animation="true"
+                          popover-append-to-body="true"
+                          popover-placement="bottom"
+                          popover-trigger="outsideClick"></span>
+                    <span class="fa fa-times"
+                          title="{{ 'DELETE_FOLDER' | translate }}"
+                          uib-popover-template="deleteFolder.templateUrl"
+                          popover-animation="true"
+                          popover-append-to-body="true"
+                          popover-placement="bottom"
+                          popover-trigger="outsideClick"></span>
+                </p>
+            </div>
+            <div>
+                <p><span><i>{{ 'CREATION_DATE' | translate }}</i> </span><span style="color: #6e6e71">{{sub.CreationTime | date:"MM/dd/yyyy"}}</span></p>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/ng-template" id="smFileTemplate.html">
+    <div class="wfmSubfolderSm clearfix">
+        <div class="pull-left">
+            <div class="checkbox checkbox-danger">
+                <input type="checkbox"
+                       class="styled styled-primary"
+                       ng-click="deleteSelectedDisable()"
+                       ng-model="file.Selected">
+                <label></label>
+            </div>
+        </div>
+        <div title="{{file.Name}}" class="pull-left">
+            <img ng-src="{{file.Icon}}" />
+        </div>
+        <div class="pull-left">
+            <p>
+                {{file.Name}}
+            </p>
+        </div>
+        <div class="pull-right">
+            <div>
+                <p>
+                    <span class="fa fa-pencil"
+                          title="{{ 'RENAME_FILE' | translate }}"
+                          uib-popover-template="renameFile.templateUrl"
+                          popover-animation="true"
+                          popover-append-to-body="true"
+                          popover-placement="left"
+                          popover-trigger="outsideClick"></span>
+                    <span class="fa fa-times"
+                          title="{{ 'DELETE_FILE' | translate }}"
+                          uib-popover-template="deleteFile.templateUrl"
+                          popover-animation="true"
+                          popover-append-to-body="true"
+                          popover-placement="left"
+                          popover-trigger="outsideClick"></span>
+                </p>
+            </div>
+            <div>
+                <p><span><i>{{ 'CREATION_DATE' | translate }}</i> </span><span style="color: #6e6e71">{{file.CreationTime | date:"MM/dd/yyyy"}}</span>&nbsp <span><i>{{ 'SIZE' | translate }}</i></span> <span style="color: #6e6e71">{{file.Size | toKiloByte}}<i>{{ 'KB' | translate }}</i></span></p>
+            </div>
+        </div>
+    </div>
+</script>
+
+<div class="wfm">
+    <div class="clearfix wfmMenu">
+        <div class="input-group pull-left">
+            <div class="btn-group" role="group">
+                <button uib-popover-template="addNewFolder.templateUrl"
+                        popover-animation="true"
+                        popover-placement="bottom"
+                        popover-trigger="outsideClick"
+                        popover-append-to-body="true"
+                        class="btn btn-default"
+                        type="button"
+                        title="{{ 'ADD_NEW_FOLDER' | translate }}">
+                    <img src="/Content/app/images/add.png" />
+                </button>
+                <button class="btn btn-default" type="button" title="{{ 'UPLOAD_FILES' | translate }}" ngf-select="uploadFiles($files)" multiple>
+                    <img src="/Content/app/images/download.png" />
+                </button>
+                <button class="btn btn-default"
+                        uib-popover-template="resizeSelectedImage.templateUrl"
+                        popover-animation="true"
+                        popover-placement="bottom"
+                        popover-append-to-body="true"
+                        popover-trigger="outsideClick"
+                        type="button"
+                        title="{{ 'RESIZE_SELECTED_IMAGE' | translate }}"
+                        ng-disabled="resizeSelectedImageDisabled">
+                    <img src="/Content/app/images/resize.png" />
+                </button>
+                <button class="btn btn-default"
+                        uib-popover-template="deleteSelected.templateUrl"
+                        popover-animation="true"
+                        popover-placement="bottom"
+                        popover-append-to-body="true"
+                        popover-trigger="outsideClick"
+                        type="button"
+                        title="{{ 'DELETE_SELECTED' | translate }}"
+                        ng-disabled="deleteSelectedDisabled">
+                    <img src="/Content/app/images/delete.png" />
+                </button>
+            </div>
+        </div>
+        <div class="input-group pull-left" style="margin-left:10px;">
+            <div class="btn-group" role="group">
+                <button uib-popover-template="sortingFiles.templateUrl"
+                        popover-animation="true"
+                        popover-placement="bottom"
+                        popover-trigger="outsideClick"
+                        popover-append-to-body="true"
+                        class="btn btn-default"
+                        type="button"
+                        title="{{ 'SORTING' | translate }}">
+                    <img src="/Content/app/images/sort.png" />
+                </button>
+            </div>
+        </div>
+        <div class="input-group pull-right">
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default" ng-class="{ 'active': size == 'Large' }">
+                    <input type="radio" ng-click="changeSize()" ng-model="size" value="Large" /><span class="glyphicon glyphicon-th-large webFileManagerSubMenuButton"></span>
+                </label>
+                <label class="btn btn-default" ng-class="{ 'active': size == 'Medium' }">
+                    <input type="radio" ng-click="changeSize()" ng-model="size" value="Medium" /><span class="glyphicon glyphicon-th webFileManagerSubMenuButton"></span>
+                </label>
+                <label class="btn btn-default" ng-class="{ 'active': size == 'Small' }">
+                    <input type="radio" ng-click="changeSize()" ng-model="size" value="Small" /><span class="glyphicon glyphicon-th-list webFileManagerSubMenuButton"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix wfmBreadcrumb">
+        <ol class="breadcrumb">
+            <li ng-repeat="folder in pathArray" ng-class="{'active': folder.active}">
+                <a ng-click="selectRootFolder(folder.path)" ng-hide="folder.active">
+                    {{folder.name}}
+                </a>
+                <span ng-show="folder.active">{{folder.name}}</span>
+            </li>
+        </ol>
+    </div>
+    <div class="clearfix wfmBody" ngf-drop="uploadFiles($files)" ngf-multiple=true>
+        <div class="wfmProgress wfmProgressBack" ng-show="progress"></div>
+        <div class="wfmProgress wfmProgressIcon" ng-show="progress">
+            <i style="color: #0094ff" class="fa fa-spinner fa-pulse"></i>
+        </div>
+        <div class="wfmContent">
+            <div ng-switch on="selectedSize">
+                <div ng-switch-when="Large">
+                    <big-subfolder ng-repeat="sub in folder.SubFolders | orderBy:sortingFiles.filter:sortingFiles.dir"></big-subfolder>
+                    <big-file ng-repeat="file in folder.Files | orderBy:sortingFiles.filter:sortingFiles.dir"></big-file>
+                </div>
+                <div ng-switch-when="Medium">
+                    <med-subfolder ng-repeat="sub in folder.SubFolders | orderBy:sortingFiles.filter:sortingFiles.dir"></med-subfolder>
+                    <med-file ng-repeat="file in folder.Files | orderBy:sortingFiles.filter:sortingFiles.dir"></med-file>
+                </div>
+                <div ng-switch-when="Small">
+                    <sm-subfolder ng-repeat="sub in folder.SubFolders | orderBy:sortingFiles.filter:sortingFiles.dir"></sm-subfolder>
+                    <sm-file ng-repeat="file in folder.Files | orderBy:sortingFiles.filter:sortingFiles.dir"></sm-file>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

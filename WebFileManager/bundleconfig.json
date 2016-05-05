@@ -1,0 +1,16 @@
+[
+    {
+        "outputFileName": "Scripts/app/angular-webFileManager.js",
+        "inputFiles": [
+            "Scripts/app/webFileManager.js",
+            "Scripts/app/constants/wfmConstants.js",
+            "Scripts/app/constants/wfmTranslations.js",
+            "Scripts/app/filters/wfmFilters.js",
+            "Scripts/app/services/wfmFolderService.js",
+            "Scripts/app/services/wfmNotificationService.js",
+            "Scripts/app/services/wfmHttpService.js",
+            "Scripts/app/services/wfmHttpExService.js",
+            "Scripts/app/directives/wfmDirectives.js"
+        ]
+    }
+]

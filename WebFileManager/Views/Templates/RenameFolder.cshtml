@@ -1,0 +1,9 @@
+﻿<div class="input-group" style="width: 220px;">
+    <input type="text" class="form-control" 
+           ng-model="renameFolder.newFolderName" placeholder="{{ 'NEW_FOLDER_NAME' | translate }}">
+    <span class="input-group-btn">
+        <button class="btn btn-success" ng-click="renameFolder.ok(sub.Name, renameFolder.newFolderName)" type="button">
+            <span class="glyphicon glyphicon-ok"></span>
+        </button>
+    </span>
+</div>

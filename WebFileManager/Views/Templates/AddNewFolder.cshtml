@@ -1,0 +1,13 @@
+﻿<div class="input-group">
+    <input type="text" 
+           class="form-control" 
+           ng-model="addNewFolder.folderName" 
+           placeholder="{{ 'NEW_FOLDER_NAME' | translate }}">
+    <span class="input-group-btn">
+        <button class="btn btn-success"
+                ng-click="addNewFolder.ok(addNewFolder.folderName)"
+                type="button">
+            <span class="glyphicon glyphicon-plus"></span>
+        </button>
+    </span>
+</div>
